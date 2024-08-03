@@ -9,6 +9,8 @@ import { catalogView } from './src/dashboard.js';
 import { createView } from './src/create.js';
 import { detailsView } from './src/details.js';
 import { editView } from './src/edit.js';
+import { createSearch } from './src/search.js'
+
 
 page('/register', registerView)
 page('/login', loginView)
@@ -16,6 +18,7 @@ page('/dashboard', catalogView)
 page('/create', createView)
 page('/details/:detailsId', detailsView)
 page('/edit/:albumId', editView)
+page('/search', createSearch)
 page.start()
 
 
