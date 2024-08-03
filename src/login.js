@@ -1,6 +1,6 @@
 import { html, render } from '../node_modules/lit-html/lit-html.js';
 import { updateInfo } from '../app.js'
-import { showHomePage } from '../app.js';
+import { catalogView } from '../src/dashboard.js';
 
 let loginTemplate = () => html`
        <section id="login">
@@ -48,7 +48,7 @@ function onsubmit(e) {
             localStorage.setItem('token', data.accessToken)
             localStorage.setItem('ownerId', data._id)
             updateInfo()
-            showHomePage()
+            catalogView()
         })
         .catch(error => alert(error.message))
 }

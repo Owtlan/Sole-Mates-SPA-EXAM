@@ -1,5 +1,5 @@
 import { updateInfo } from '../app.js'
-import { showHomePage } from '../app.js';
+import { catalogView } from '../src/dashboard.js';
 
 export const logout = (e) => {
     e.preventDefault()
@@ -10,7 +10,7 @@ export const logout = (e) => {
         }
     })
     localStorage.clear()
-    showHomePage()
+    catalogView()
     updateInfo()
 
 }
