@@ -4,7 +4,7 @@ import { html, render } from '/node_modules/lit-html/lit-html.js'
 
 import { registerView } from './src/register.js';
 import { loginView } from './src/login.js';
-// import { logout } from './src/logout.js';
+import { logout } from './src/logout.js';
 // import { catalogView } from './src/dashboard.js';
 // import { createView } from './src/create.js';
 // import { detailsView } from './src/details.js';
@@ -21,7 +21,7 @@ page.start()
 
 
 //logout
-// document.querySelector('a[href="/logout"]').addEventListener('click', logout)
+document.querySelector('a[href="/logout"]').addEventListener('click', logout)
 
 export const updateInfo = () => {
     let userDiv = document.querySelector('.user')
