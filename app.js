@@ -3,7 +3,7 @@ import { html, render } from '/node_modules/lit-html/lit-html.js'
 
 
 import { registerView } from './src/register.js';
-// import { loginView } from './src/login.js';
+import { loginView } from './src/login.js';
 // import { logout } from './src/logout.js';
 // import { catalogView } from './src/dashboard.js';
 // import { createView } from './src/create.js';
@@ -11,7 +11,7 @@ import { registerView } from './src/register.js';
 // import { editView } from './src/edit.js';
 
 page('/register', registerView)
-// page('/login', loginView)
+page('/login', loginView)
 // page('/dashboard', catalogView)
 // page('/create', createView)
 // page('/details/:detailsId', detailsView)
