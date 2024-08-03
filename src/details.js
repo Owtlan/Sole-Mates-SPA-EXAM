@@ -37,16 +37,16 @@ const getDetails = (detailsId) => {
         .then(res => res.json())
 }
 
-// const deleteAlbum = (id) => {
-//     return fetch(`http://localhost:3030/data/shoes/${id}`, {
-//         method: 'DELETE',
-//         headers: {
-//             'Content-Type': 'application/json',
-//             'X-Authorization': localStorage.getItem('token')
-//         }
-//     })
-//         .then(res => res.json());
-// }
+const deleteAlbum = (id) => {
+    return fetch(`http://localhost:3030/data/shoes/${id}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Authorization': localStorage.getItem('token')
+        }
+    })
+        .then(res => res.json());
+}
 
 export const detailsView = (ctx) => {
     getDetails(ctx.params.detailsId)
