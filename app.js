@@ -2,7 +2,7 @@ import page from '../node_modules/page/page.mjs';
 import { html, render } from '/node_modules/lit-html/lit-html.js'
 
 
-// import { registerView } from './src/register.js';
+import { registerView } from './src/register.js';
 // import { loginView } from './src/login.js';
 // import { logout } from './src/logout.js';
 // import { catalogView } from './src/dashboard.js';
@@ -10,13 +10,13 @@ import { html, render } from '/node_modules/lit-html/lit-html.js'
 // import { detailsView } from './src/details.js';
 // import { editView } from './src/edit.js';
 
-// page('/register', registerView)
+page('/register', registerView)
 // page('/login', loginView)
 // page('/dashboard', catalogView)
 // page('/create', createView)
 // page('/details/:detailsId', detailsView)
 // page('/edit/:albumId', editView)
-// page.start()
+page.start()
 
 
 
